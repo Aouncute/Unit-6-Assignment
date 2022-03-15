@@ -1,5 +1,6 @@
 package com.example.simpleinstagram.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.simpleinstagram.LoginActivity;
 import com.example.simpleinstagram.Post;
 import com.example.simpleinstagram.R;
 import com.parse.FindCallback;
@@ -20,6 +22,9 @@ import com.parse.ParseUser;
 import java.util.List;
 
 public class ProfileFragment extends PostsFragment {
+
+    public static final String TAG = "ProfileFragment";
+
 
 
     @Override

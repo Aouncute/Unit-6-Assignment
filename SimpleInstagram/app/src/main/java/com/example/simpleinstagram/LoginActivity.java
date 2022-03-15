@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void done(ParseException e) {
                         if (e == null) {
-                            Toast.makeText(LoginActivity.this, "Success!" ,Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Welcome! " + username ,Toast.LENGTH_SHORT).show();
                             goMainActivity();
                         }  else {
                             Log.e(TAG, "Issue with sign up", e);
